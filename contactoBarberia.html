@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Barberia Alura</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+
+        <h1 class="logo__header"><!--se utiliza un h1 en la imagen para darle importancia al logo-->
+            <figure>
+                <img src="img/logo.png" alt="logo barberia">
+            </figure>
+        </h1>
+
+        <nav class="nav">
+            <ul>
+                <li class="enlace__nav"><a href="index.html">home</a></li>
+                <li class="enlace__nav"><a href="serviciosbarberia.html">productos</a></li>
+                <li class="enlace__nav"><a href="contactoBarberia.html">contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="contenedor__formulario">
+        <form action="#" class="formulario">
+
+                <div class="contenido__formulario">
+                    <label for="nombreApellido">Nombre y apellido</label>
+                    <input type="text" placeholder="Ingresa tu nombre y apellido" id="nombreApellido" required>
+                </div>
+    
+                <div class="contenido__formulario">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" placeholder="Ingresa tu correo electronico" id="correo" required>
+                </div>
+    
+                <div class="contenido__formulario">
+                    <label for="telefono">Telefono</label>
+                    <input type="number" placeholder="Ingresa tu telefono" id="telefono" required>
+                </div>
+
+                <div class="contenido__formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" placeholder="Ingresa tu mensaje" id="mensaje" rows="10" required></textarea>
+                </div>
+
+                <fieldset class="contenido__radio">
+
+                    <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+                    <div class="contenido__formuladio--radio">
+                        <input type="radio" name="contacto" value="Correo" id="radio-correo">
+                        <label for="radio-correo">Correo</label>
+                    </div>
+    
+                    <div class="contenido__formuladio--radio">
+                        <input type="radio" name="contacto" value="Telefono" id="radio-telefono">
+                        <label for="radio-telefono">Telefono</label>
+                    </div>
+    
+                    <div class="contenido__formuladio--radio">
+                        <input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp" checked>
+                        <label for="radio-whatsapp">WhatsApp</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="seleccion__jornada">
+
+                    <legend>¿En cual horario prefiere ser atendido ?</legend>
+                
+                    <select>
+                        <option disabled selected> --Seleccione la jornada--</option>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <div class="notificaciones">
+                    <input type="checkbox" name="notificaciones" id="notificaciones" checked>
+                    <label for="notificaciones">Desea recibir notificaciones de la Barberia Alura</label> 
+                </div>
+
+            <input class="enviar__formulario" type="submit" value="Enviar Formulario">
+
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Días</th>
+                            <th>Horarios</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>8:00am - 7:00</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>8:00am - 7:00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8:00am - 7:00</td>
+                        </tr>
+                    </tbody>
+
+            </table>
+                    
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <figure>
+            <img src="img/logo-blanco.png" alt="logo blanco">
+        </figure>
+        <p>&copy Copyright Barberia Alura - 2023</p>
+    </footer>
+
+</body>
+</html>
